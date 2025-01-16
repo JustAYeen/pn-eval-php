@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: stretch;
+    color: #ffebcd;
+    background-color: #6c4747;
+    height: 20vh;
+    padding: 15px;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}

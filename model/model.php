@@ -28,6 +28,12 @@ class Model {
      */
     public function getEvents() {
         // à vous de l'écrire - allez voir ce qu'on a déjà fait en php
-    }
 
+        $sqlQuery = "SELECT image, lieu, description, difficulte, id FROM events";
+        $statement = $this->bdd->prepare($sqlQuery);
+        $statement->execute();
+        $req = $statement->fetchAll();
+
+        return $req;
+    }
 }
